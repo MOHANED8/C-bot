@@ -1,6 +1,6 @@
 # C-BOT
 <div>
-<img src="https://github.com/MOHANED8/C-bot/assets/79280405/88d6a6f2-28bf-4bbd-a245-7943a64dd452" width="500" hight="500"
+<img src="https://github.com/MOHANED8/C-bot/assets/79280405/d144a8a0-b5e9-4813-a72a-d906db90d161" width="500" hight="500"
 </div>
 
 
