@@ -21,9 +21,6 @@ Provides a manual control interface with a joystick and action buttons for real-
 ### My Reports: 
 Displays a list of disinfection reports, showing details like unit, floor, room, and status of each disinfection task.
 
-### Countdown Timer: 
-Shows a countdown during the disinfection process, with a congratulatory message upon completion.
-
 # Built With
 
 [Flutter](https://flutter.dev/) - The UI toolkit used
