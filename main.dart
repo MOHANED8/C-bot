@@ -8,7 +8,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'dart:io';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:path_provider/path_provider.dart';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 
 class RoomTask {
@@ -312,25 +312,7 @@ class SignupPage extends StatelessWidget {
   }
 
   Future<void> _signup(BuildContext context) async {
-    setState(() => _isProcessing = true);
-    try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
-        email: emailController.text.trim(),
-        password: passwordController.text.trim(),
-      );
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomePage()),
-      );
-    } on FirebaseAuthException catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Failed to sign up: ${e.message}')),
-      );
-    } finally {
-      setState(() => _isProcessing = false);
-    }
-  }
 
-  void setState(Function() param0) {}
 }
 
 class HomePage extends StatelessWidget {
